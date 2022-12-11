@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles\styles1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Oswald:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <title>TheMusicPlayer</title>
+</head>
+
+<body><div class="musicContainer">
+    <h1 class="appName">Sn'iF</h1>
+
+    
+        <div class="musicInfo">
+            <h4 id="title"></h4>
+            <div class="progressContainer">
+                <div class="progress">
+
+                </div>
+            </div>
+        </div>
+        <audio src="" id="audio"></audio>
+        <div class="imageContainer">
+            <img src="images\music.png" alt="" srcset="">
+        </div>
+        <div class="navigation">
+            <button id="decreaseSpeed" class="actionBtn"><i class="fi fi-sr-rewind "></i></button>
+            <button id="prev" class="actionBtn"><i class="fi fi-sr-caret-left"></i></button>
+            <button id="play" class="actionBtn"><i class="fi fi-sr-play" id="pause"></i></button>
+            <button id="next" class="actionBtn"><i class="fi fi-sr-caret-right"></i></button>
+            <button id="increaseSpeed" class="actionBtn"><i class="fi fi-sr-forward"></i></button>
+            <button id="reload" class="actionBtn"><i class="fi fi-sr-refresh"></i></button>
+
+        </div>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

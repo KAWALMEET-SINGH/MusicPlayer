@@ -1,0 +1,148 @@
+/* ADD QUEIRES FOR SMALL width-375 
+   ND LARGE w-1024
+
+*/
+
+
+body{
+  height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(to bottom right,#78AAF4,#fff);
+}
+.musicContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.appName{
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 2.5rem;
+  margin-right: 100%;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+
+
+.musicInfo{
+  font-family: 'Oswald', sans-serif;
+  background-color: #ffe7ae;
+  position: relative;
+  bottom: -32px;
+  border-top-right-radius: 5px;
+  padding-left: 40px;
+  width: 155px;
+  height: 50px;
+  right: 10px;
+  padding-bottom: 5px;
+  font-size: 1rem;
+}
+#title{
+  margin-bottom: 0px;
+  margin-top: 10px;
+  width: 100px;       
+  margin-right: 50px;          
+}
+.progressContainer{
+  background-color: blanchedalmond;
+  margin: 0;
+  padding: 0;
+  height: 2px;
+  width: 150px;
+
+}
+.progress{
+  background: #42c8ff;
+  margin-top: 0;
+  padding: 0px;
+  height: 1.75px; 
+  width: 0%;
+}
+
+.imageContainer {
+  flex-wrap: nowrap;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 2px;
+  border-radius: 50%;
+  bottom: 50px;
+  right: 3px;
+  z-index: 2;
+  margin-right: 235px;
+  box-shadow: none;
+}
+
+.imageContainer img{
+  border-radius: 50%;
+  padding: 0;
+  height: 100px;
+}
+.rotate {
+    animation: rotation 8s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+.navigation{
+  flex-wrap: wrap;
+  background-color: #feb9e8;
+  border-radius: 5px;
+  position: relative;
+  bottom: 85px;
+  left: auto;
+  z-index: 1;
+  padding-right: 10px;
+  padding-left: 30px;
+  height: 18px;
+}
+.actionBtn{
+  border: none;
+  background: none;
+}
+.actionBtn :hover{
+  color: rgb(43, 42, 42);
+}
+@media screen and (max-width: 400px) {
+  
+  .imageContainer {
+    z-index: -1;
+    left: 22%;
+    bottom:50px;
+  }
+  .musicInfo{
+    top: 75px;
+    right: 30px;
+    height: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+  }
+  .navigation{
+    top: -29px;
+    right: 30px;
+    height: 25px;
+  }
+  .musicInfo #title{
+    position: relative;
+    bottom: 10px;
+    left: 15px;
+  }
+  .musicContainer .progressContainer{
+    width: 195px; 
+    position: relative;
+    bottom: 8px;
+    right: 40px;
+    height: 3px;
+  }
+  .actionBtn{
+    width: 30px;
+    height: 28px;
+  }
+}
